@@ -10,16 +10,16 @@
 // b = multiply(2,3);
 // console.log(b);
 // console.log(multiply(5,2));
-// var x = [1,2,3,4,5,10];
-// for(var i=0; i<5; i++)
+// let x = [1,2,3,4,5,10];
+// for(let i=0; i<5; i++)
 // {
 //    i = i + 3; 
 //    console.log(i);
 // }
-// var x=15;
+// let x=15;
 // console.log(x);
 // function awesome(){
-//     var x=10;
+//     let x=10;
 //     console.log(x);
 // }
 // console.log(x);
