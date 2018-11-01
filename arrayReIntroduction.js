@@ -90,7 +90,11 @@ x = [20,30,40,50,60,70]
 function removeVals(x, start,end){
     
     for(let i=0; i < start-end; i++){
-        
+        if(x[i] > start && x[i] < end){
+
+        }else{
+            x.push(x[i]);
+        }
         
     }
     console.log(x);
