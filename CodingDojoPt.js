@@ -174,13 +174,32 @@
 // };
 // sqrValue(x);
 
-let x =  [1,5, 10, -2];
-function eliminateNeg(x){
-    for(let i =0; i< x.length; i++){
-        if(x[i] <0){
-            x[i] = 0;
+// let x =  [1,5, 10, -2];
+// function eliminateNeg(x){
+//     for(let i =0; i< x.length; i++){
+//         if(x[i] <0){
+//             x[i] = 0;
+//         }
+//     }
+//     console.log(x);
+// }
+// eliminateNeg(x);
+
+let x = [1,5,10,-2];
+function minMaxAvg(x){
+    let max = x[0];
+    let min = x[0];
+    let sum =0;
+    let avg = 0;
+    for(let i =0; i<x.length; i++){
+        if(max < x[i]){
+            max = x[i];
+        }else if(min > x[i]){
+            min = x[i];
         }
+        sum += x[i];
+        avg = sum/x.length;
     }
-    console.log(x);
+    console.log("Maximum value is: ", max, "Minimum value is: ", min, "The average value is: ", avg);
 }
-eliminateNeg(x);
+minMaxAvg(x);
