@@ -122,15 +122,29 @@
 // }
 // ArrayWithOdds(x);
 
-x = 256;
+// x = 256;
 
-function ArrayWithOdds(x){
-    let y = [];
-    for(let i=0; i<x; i++){
-        if(i % 2 !==0){
-            y.push(i);
+// function ArrayWithOdds(x){
+//     let y = [];
+//     for(let i=0; i<x; i++){
+//         if(i % 2 !==0){
+//             y.push(i);
+//         }
+//     }
+//     console.log(y);
+// }
+// ArrayWithOdds(x);
+
+// Greater than y;
+
+let x = [1,2,3,4,5,6,7,8,9,10,12,14,15,16,17,18,256];
+let y = 3;
+function greaterThanY(x,y){
+    let gY = [];
+    for(let i =0; i < x.length; i++){
+        if(y < x[i]){
+            gY.push(x[i]);
         }
-    }
-    console.log(y);
+    } console.log(gY);
 }
-ArrayWithOdds(x);
+greaterThanY(x, y);
