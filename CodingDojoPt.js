@@ -20,16 +20,25 @@
 // printOdd1000();
 
 
-function printOdd1000(){
-    let oddSum = 0;
-    for(let i=0; i<= 5000; i++){
-        if(i % 2 !==0){
-            oddSum += i;
-        }
+// function printOdd1000(){
+//     let oddSum = 0;
+//     for(let i=0; i<= 5000; i++){
+//         if(i % 2 !==0){
+//             oddSum += i;
+//         }
+//     }
+//     console.log(oddSum);
+// }
+
+// printOdd1000();
+
+
+//Iterating Through the Array
+
+let x = [1,3,5,7,9,13];
+function itArray(x){
+    for(let i =0; i < x.length; i++){
+        console.log(x[i]);
     }
-    console.log(oddSum);
 }
-
-printOdd1000();
-
-
+itArray(x);
