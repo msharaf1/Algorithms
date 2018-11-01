@@ -204,16 +204,28 @@
 // }
 // minMaxAvg(x);
 
-let x = [1,5, 10, 7, -2];
-function shiftArray(x){
+// let x = [1,5, 10, 7, -2];
+// function shiftArray(x){
 
-    for(let i =0; i<x.length; i++){
-        x[i] = x[i+1];
-        if(x[i]===undefined){
-            x[i] =0;
-        }
-    }
-    console.log(x);
-}
-shiftArray(x);
+//     for(let i =0; i<x.length; i++){
+//         x[i] = x[i+1];
+//         if(x[i]===undefined){
+//             x[i] =0;
+//         }
+//     }
+//     console.log(x);
+// }
+// shiftArray(x);
+
+//Replace Zero with String
+// let x = [-1, -3, 2];
+// function zeroToString(x){
+//     for(let i=0; i<x.length; i++){
+//         if(x[i] < 0){
+//             x[i] = "Dojo";
+//         }
+//     }
+//     console.log(x);
+// }
+// zeroToString(x);
 
