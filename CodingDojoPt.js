@@ -68,16 +68,69 @@
 
 // findMin(x);
 
-let x = [1,3,5,7,9,13];
-function average(x){
-    let sum = 0;
-    let avg = 0;
-    for(let i =0; i<x.length; i++){
-        sum += x[i];
-        avg = sum/x.length;
+// let x = [1,3,5,7,9,13];
+// function average(x){
+//     let sum = 0;
+//     let avg = 0;
+//     for(let i =0; i<x.length; i++){
+//         sum += x[i];
+//         avg = sum/x.length;
+//     }
+//     console.log(avg);
+// }
+
+// average(x);
+
+// Array With Odd Numbers
+
+// x = [1,2,3,4,5,6,7,8,9,10,12,14,15,16,17,18,256];
+
+// function ArrayWithOdds(x){
+//     let y = [];
+//     for(let i=0; i<x.length; i++){
+//         if(x[i] % 2 !==0){
+//             y.push(x[i]);
+//         }
+//     }
+//     console.log(y);
+// }
+// ArrayWithOdds(x);
+
+// x = 256;
+
+// function ArrayWithOdds(x){
+//     let y = "";
+//     for(let i=0; i<x; i++){
+//         if(i % 2 !==0){
+//             y = y +", " +i;
+//         }
+//     }
+//     console.log(y);
+// }
+// ArrayWithOdds(x);
+
+// x = 256;
+
+// function ArrayWithOdds(x){
+//     let y = 0;
+//     for(let i=1; i<x; i++){
+//         if(i % 2 !==0){
+//             y = y +", " +i;
+//         }
+//     }
+//     console.log(y);
+// }
+// ArrayWithOdds(x);
+
+x = 256;
+
+function ArrayWithOdds(x){
+    let y = [];
+    for(let i=0; i<x; i++){
+        if(i % 2 !==0){
+            y.push(i);
+        }
     }
-    console.log(avg);
+    console.log(y);
 }
-
-average(x);
-
+ArrayWithOdds(x);
