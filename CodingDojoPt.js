@@ -67,3 +67,17 @@
 // }
 
 // findMin(x);
+
+let x = [1,3,5,7,9,13];
+function average(x){
+    let sum = 0;
+    let avg = 0;
+    for(let i =0; i<x.length; i++){
+        sum += x[i];
+        avg = sum/x.length;
+    }
+    console.log(avg);
+}
+
+average(x);
+
