@@ -11,10 +11,25 @@
 
 // function printOdd1000(){
 //     for(let i=0; i<= 1000; i++){
-//         console.log(i);
+//         if(i % 2 !==0){
+//             console.log(i);
+//         }
 //     }
 // }
 
 // printOdd1000();
+
+
+function printOdd1000(){
+    let oddSum = 0;
+    for(let i=0; i<= 5000; i++){
+        if(i % 2 !==0){
+            oddSum += i;
+        }
+    }
+    console.log(oddSum);
+}
+
+printOdd1000();
 
 
