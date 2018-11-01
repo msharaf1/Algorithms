@@ -66,3 +66,35 @@
 
 
 // Given array, and indices start and end, remove vals in that index range, working in-place (hence shortening the array).  For example, removeVals([20,30,40,50,60,70],2,4) should return [20,30,70].
+
+// x = [20,30,40,50,60,70]
+// function removeVals(x, start,end){
+//     let newArr = [];
+//     for(let i=0; i < x.length; i++){
+//         if(i<start){
+//             newArr.push(x[i]);
+//         }else if(i > end){
+//             newArr.push(x[i]);
+
+//         }
+        
+//     }
+//     console.log(newArr);
+//     // return newArr;
+
+// }
+// removeVals(x, 2, 4);
+
+x = [20,30,40,50,60,70]
+// not completed
+function removeVals(x, start,end){
+    
+    for(let i=0; i < start-end; i++){
+        
+        
+    }
+    console.log(x);
+    // return newArr;
+
+}
+removeVals(x, 2,4);
