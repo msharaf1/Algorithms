@@ -185,21 +185,35 @@
 // }
 // eliminateNeg(x);
 
-let x = [1,5,10,-2];
-function minMaxAvg(x){
-    let max = x[0];
-    let min = x[0];
-    let sum =0;
-    let avg = 0;
+// let x = [1,5,10,-2];
+// function minMaxAvg(x){
+//     let max = x[0];
+//     let min = x[0];
+//     let sum =0;
+//     let avg = 0;
+//     for(let i =0; i<x.length; i++){
+//         if(max < x[i]){
+//             max = x[i];
+//         }else if(min > x[i]){
+//             min = x[i];
+//         }
+//         sum += x[i];
+//         avg = sum/x.length;
+//     }
+//     console.log("Maximum value is: ", max, "Minimum value is: ", min, "The average value is: ", avg);
+// }
+// minMaxAvg(x);
+
+let x = [1,5, 10, 7, -2];
+function shiftArray(x){
+
     for(let i =0; i<x.length; i++){
-        if(max < x[i]){
-            max = x[i];
-        }else if(min > x[i]){
-            min = x[i];
+        x[i] = x[i+1];
+        if(x[i]===undefined){
+            x[i] =0;
         }
-        sum += x[i];
-        avg = sum/x.length;
     }
-    console.log("Maximum value is: ", max, "Minimum value is: ", min, "The average value is: ", avg);
+    console.log(x);
 }
-minMaxAvg(x);
+shiftArray(x);
+
