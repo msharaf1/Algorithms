@@ -35,10 +35,35 @@
 
 //Iterating Through the Array
 
-let x = [1,3,5,7,9,13];
-function itArray(x){
-    for(let i =0; i < x.length; i++){
-        console.log(x[i]);
-    }
-}
-itArray(x);
+// let x = [1,3,5,7,9,13];
+// function itArray(x){
+//     for(let i =0; i < x.length; i++){
+//         console.log(x[i]);
+//     }
+// }
+// itArray(x);
+
+//Find Max Number in an Array.
+
+// let x = [1,3,5,7,9,13,800,-155];
+// function findMax(x){
+//     let max = 0;
+//     for(let i=0; i<x.length; i++){
+//         if(max < x[i]){
+//             max = x[i];
+//         }
+//     }console.log(max);
+// }
+// findMax(x);
+
+// let x = [1,3,5,7,9,13,800,-155];
+// function findMin(x){
+//     let min = 0;
+//     for(let i=0; i<x.length; i++){
+//         if(min > x[i]){
+//             min = x[i];
+//         }
+//     }console.log(min);
+// }
+
+// findMin(x);
