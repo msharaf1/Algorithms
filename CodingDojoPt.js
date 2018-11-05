@@ -231,6 +231,16 @@
 
 //Random Array
 
-function randArray(){
-    let randArr = 
+let num = 100;
+function randArray(min, max){
+    let randArr = [];
+    for(let i=0; i< max; i++){
+        let rand = Math.floor(Math.random() * (max-min) + min);
+        // console.log(rand);
+        randArr.push(rand);
+    }
+    return randArr;
+    
 }
+
+console.log(randArray(-50,100));
