@@ -231,16 +231,32 @@
 
 //Random Array
 
-let num = 100;
-function randArray(min, max){
-    let randArr = [];
-    for(let i=0; i< max; i++){
-        let rand = Math.floor(Math.random() * (max-min) + min);
-        // console.log(rand);
-        randArr.push(rand);
-    }
-    return randArr;
+// let num = 100;
+// function randArray(min, max){
+//     let randArr = [];
+//     for(let i=0; i< max; i++){
+//         let rand = Math.floor(Math.random() * (max-min) + min);
+//         // console.log(rand);
+//         randArr.push(rand);
+//     }
+//     return randArr;
     
-}
+// }
 
-console.log(randArray(-50,100));
+// console.log(randArray(-50,100));
+
+
+// Swapping two values
+// Write a program that takes an array of numbers and returns an array where the first and last numbers in the array have been switched.For example say x = [2, 3, 5, 7, 6]. By the end of the program x, should be [6, 3, 5, 7, 2]. Do this without creating an empty array.
+
+let x = [2, 3, 5, 7, 6];
+
+function swapValues(x){
+    for(let i=0; i < x.length; i++){
+        let temp = x[0];
+        x[0] = x[x.length-1];
+        x[x.length-1] = temp;
+    }
+    return x;
+}
+console.log(swapValues(x));
