@@ -249,14 +249,71 @@
 // Swapping two values
 // Write a program that takes an array of numbers and returns an array where the first and last numbers in the array have been switched.For example say x = [2, 3, 5, 7, 6]. By the end of the program x, should be [6, 3, 5, 7, 2]. Do this without creating an empty array.
 
-let x = [2, 3, 5, 7, 6];
+// let x = [2, 3, 5, 7, 6];
 
-function swapValues(x){
-    for(let i=0; i < x.length; i++){
-        let temp = x[0];
-        x[0] = x[x.length-1];
-        x[x.length-1] = temp;
-    }
-    return x;
-}
-console.log(swapValues(x));
+// function swapValues(x){
+//     for(let i=0; i < x.length; i++){
+//         let temp = x[0];
+//         x[0] = x[x.length-1];
+//         x[x.length-1] = temp;
+//     }
+//     return x;
+// }
+// console.log(swapValues(x));
+
+
+// Assignment: Reversing
+// Given an array X of multiple values (e.g. [-3,5,1,3,2,10]), write a program that reverses the values in the array.  Once your program is done X should be in the reserved order.  Do this without creating a temporary array.  Also, do NOT use the reverse method but find a way to reverse the values in the array (HINT: swap the first value with the last; second with the second to last and so forth).
+
+
+// let x = [-3,5,1,3,2,10];
+
+// function reverArray(x){
+//     for(let i =x.length-1; i>=0; i--){
+//         // console.log(x[i]);
+//         x[0] = x[i];
+//         x[i] = x[j];
+    
+//     }
+//     console.log(x);
+// }
+// reverArray(x);
+
+// function reverArray(x){
+//     for(let i =0; i < x.length; i++){
+//         // console.log(x[i]);
+//         x[i] = x[x.length-1];
+//     }
+//     console.log(x);
+// }
+// reverArray(x);
+
+// let x = [-3,5,1,3,2,10];
+// function revArray(array){
+//     let i =0;
+//     n = array.length;
+//     middle = Math.floor( n/2);
+//     temp = null;
+
+//     for(; i < middle; i++){
+//         temp = array[i];
+//         array[i] = array[n -1 -i];
+//         array[n-1-i] = temp;
+//     }
+//     return x;
+// }
+// console.log(revArray(x));
+
+// let x = [-3,5,1,3,2,10];
+// function reverseArray(x){
+//     for(let i =0; i < (x.length/2) -1 -i; i++){
+        
+//         let temp = x[i];
+//         x[i] = x[x.length -1 -i]; 
+//         x[x.length -1 -i] = temp;
+//     }
+//     // console.log(x);
+//      return x;
+// }
+// reverseArray(x);
+
