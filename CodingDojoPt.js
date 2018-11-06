@@ -247,7 +247,7 @@
 
 
 // Swapping two values
-// Write a program that takes an array of numbers and returns an array where the first and last numbers in the array have been switched.For example say x = [2, 3, 5, 7, 6]. By the end of the program x, should be [6, 3, 5, 7, 2]. Do this without creating an empty array.
+// For example say x = [2, 3, 5, 7, 6]. By the end of the program x, should be [6, 3, 5, 7, 2]. Do this without creating an empty array.
 
 // let x = [2, 3, 5, 7, 6];
 
@@ -262,8 +262,8 @@
 // console.log(swapValues(x));
 
 
-// Assignment: Reversing
-// Given an array X of multiple values (e.g. [-3,5,1,3,2,10]), write a program that reverses the values in the array.  Once your program is done X should be in the reserved order.  Do this without creating a temporary array.  Also, do NOT use the reverse method but find a way to reverse the values in the array (HINT: swap the first value with the last; second with the second to last and so forth).
+// Reversing
+// Given an array X of multiple values (e.g. [-3,5,1,3,2,10]), write a program that reverses the values in the array.).
 
 
 // let x = [-3,5,1,3,2,10];
@@ -317,3 +317,30 @@
 // }
 // reverseArray(x);
 
+// Insert X in Y
+// Write a program that inserts a new number X at an index Y. For example if array = [1, 3, 5, 7] and X = 10, and Y = 2, by the end of your program array should be [1, 3, 10, 5, 7] (in other words we added '10' on index 2). Check the output of your array once your program is completed to make sure it's working correctly.
+
+// function insertX(x,y){
+//     let array = [1, 3, 5, 7];
+//     let newArray = [];
+//     for(let i=0; i < array.length; i++){
+//         if(i ===y){
+//             newArray.push(x);
+//         }
+//         newArray.push(array[i]);
+//     }
+//     console.log(array);
+//     return newArray;
+// }
+// console.log(insertX(10,2));
+
+let arr = [1,3,5,7];
+let x = 10;
+let y = 2;
+arr.push(0);
+
+for(let i= arr.length -1; i>y; i--){
+    arr[i] = arr[i-1];
+}
+arr[y] = x;
+console.log(arr);
