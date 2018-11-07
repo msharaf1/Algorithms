@@ -334,13 +334,64 @@
 // }
 // console.log(insertX(10,2));
 
-let arr = [1,3,5,7];
-let x = 10;
-let y = 2;
-arr.push(0);
+// let arr = [1,3,5,7];
+// let x = 10;
+// let y = 2;
+// arr.push(0);
 
-for(let i= arr.length -1; i>y; i--){
-    arr[i] = arr[i-1];
-}
-arr[y] = x;
-console.log(arr);
+// for(let i= arr.length -1; i>y; i--){
+//     arr[i] = arr[i-1];
+// }
+// arr[y] = x;
+// console.log(arr);
+
+
+// Removing Negatives
+// Given an array of multiple values (e.g. [0, -1, 2, -3, 4, -5, 6])
+
+//Under PT...
+// let arr = [0, -1, 2, -3, 4, -5, 6];
+// function removeNegatives(arr){
+//     for(let i=0; i < arr.length; i++){
+//         if(arr[i] < 0){
+//             arr[i]=arr[i+1];
+//             // console.log(arr);
+//             // arr.pop(arr[i]);
+//         }
+//         if(arr[i] === arr[i+1]){
+//             arr.pop(arr[i]);
+//         }
+//     }
+//     return arr;
+// }
+// console.log(removeNegatives(arr));
+
+// let arr = [0, -1, 2, -3, 4, -5, 6];
+// function removeNegatives(arr){
+//     let numNegs = 0;
+//     for(let i =0; i < arr.length; i++){
+//         if(arr[i] < 0){
+//             numNegs++;
+//         } else{
+//             arr[i - numNegs] = arr[i];
+//         }
+//     }
+//     while (numNegs --){
+//         arr.pop();
+//     }
+//     return arr;
+// }
+// console.log(removeNegatives(arr));
+
+
+// let arr = [0, -1, 2, -3, 4, -5, 6];
+// function removeNegatives(arr){
+//     let newArr = [];
+//     for(let i=0; i < arr.length; i++){
+//         if(arr[i] >= 0){
+//             newArr.push(arr[i]);
+//         }
+//     }
+//     return newArr;
+// }
+// console.log(removeNegatives(arr));
