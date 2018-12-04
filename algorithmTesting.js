@@ -1,3 +1,4 @@
+//Test these codes in the browser of your choice.
 function testA(){
 
 function sumInput(n){
@@ -26,3 +27,14 @@ let secondRun = performance.now();
 console.log(`The Algorithm took ${secondRun-firstRun / 100} seconds to calculate the function`);
 };
 testB();
+
+function testC(){
+function printsMinEnterMax(n){
+    for(let i=0; i<= Math.max(5, n); i++){
+        console.log(i);
+    }
+}
+printsMinEnterMax();
+printsMinEnterMax(10);
+};
+testC();
