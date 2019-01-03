@@ -58,3 +58,18 @@ function negToZero(nArray){
 //     console.log(repArray);
 // }
 // repeatTwice([4,"Ulysses", 42, false]);
+
+myArray = [1,2,3,4,5,6];
+
+function revArray(arr){
+  let temp =0;
+  for(let i =0; i<arr.length/2; i++){
+    temp = arr[i];
+    arr[i] = arr[arr.length-1-i];
+    arr[arr.length-1-i] = temp;
+    // console.log(arr);
+  }
+  return arr;
+}
+
+console.log(revArray(myArray));
